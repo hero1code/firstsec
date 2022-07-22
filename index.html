@@ -25,6 +25,17 @@
     .navlist li{
      padding:.5%;
         margin-right: 7%;
+       
+    }
+    .navlist li a{
+        color: azure;
+        text-decoration: none;
+    }
+    .navlist li a:hover{
+        color: rgb(12, 12, 12);
+        text-decoration: none;
+        background-color: azure;
+        background-size: auto;
     }
     .img{
         display: flex;
@@ -40,15 +51,12 @@
         border:3px;
         border-style: solid;
     }
-    .navlist li:hover{
-        color: black;
-        background-color: azure;
-    }
+   
     .txt input{
         border: 3px solid rgb(19, 231, 234);
         border-radius: 5px;
         width: 30%;
-        height:40px;
+        height:35px;
     }
     .txt{
         display:flex;
@@ -57,12 +65,12 @@
         padding: .5%;
     }
     .btn{
-        height: 40px;
-        width: 6%;
+        height: 15%;
+        width: auto;
         color: rgb(255,255,255);
         font-style: italic;
        
-        margin-left: .5%;
+        
         font-size: medium;
         border-color: antiquewhite;
         background-color: aqua;
@@ -113,8 +121,6 @@
      
     }
     .neha2 img{
-        animation: hero1;
-        animation-duration: 3s;
         
         width: 20%;
 
@@ -141,24 +147,80 @@
     .para h2{
         font-size: 30px;
     }
-  @keyframes hero1 {
+    /* \\media querry\\ */
 
-    0%{
-        border-radius: 0% solid rgb(154, 206, 246);
+    @media (max-width:400px){
+        
+        .txt{
+            display: flex;
+            width:auto;
+          height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .neha1{
+            display: flex;
+            flex-direction: column-reverse;
+        border-left: 3px solid rgb(6, 101, 216);
+            
+
+        }
+        .neha1 img{
+            width:80%;
+            height:50%;
+            padding: 0% 10%;
+
+        }
+        .neha2{
+            display: flex;
+            flex-direction: column-reverse;
+            border-top: 2px dashed rgb(28, 121, 227);
+            border-bottom: 2px dashed rgb(28, 121, 227);
+        }
+        .neha2 img{
+            width:80%;
+            height:50%;
+            padding: 0% 10%;
+          
+
+        }
+        .neha3{
+            display: flex;
+            flex-direction: column-reverse;
+
+        border-left: 3px solid rgb(6, 101, 216);
+
+        }
+        .neha3 img{
+            width:80%;
+            height:50%;
+            padding: 0% 10%;
+
+        }
+        .txt input{
+            width: 80%;
+            height: 30px;
+            padding: 3% 2%;
+        }
+        .img{
+        display: flex;
+        width: 10%;
+        justify-content:start;
+      margin-left: 4%;
+      padding: .5%;
     }
-    25%{
-        border-radius: 25% solid rgb(154, 206, 246);
+    .img img{
+        border-radius: 70%;
+        width: 60%;
+        border-color: azure;
+        border:3px;
+        border-style: solid;
     }
-    50%{
-        border-radius: 50% solid rgb(154, 206, 246);
+
+
     }
-    40%{
-        border-radius: 25% solid rgb(154, 206, 246);
-    }
-    25%{ border-radius: 0% solid rgb(154, 206, 246);}
-    
-    
-  }
+
 </style>
 
 
@@ -170,10 +232,11 @@
         <div class="img">
             <img src="bg2.png"></div>
         <ul class="navlist">
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact us</li>
-            <li>Services</li>
+            <li><a href="hero.html">Home</a></li>
+            <li><a href="hero.html">About</a></li>
+            <li><a href="hero.html">Contact us</a></li>
+            <li><a href="hero.html">Services</a></li>
+           
         </ul>
     </nav>
     <div class="txt">
